@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/animal.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>夏威夷僧海豹</title>
+</head>
+<body>
+      <div class="btn">
+        <span class="fas fa-bars"> </span>
+      </div>
+      <nav class="sidebar">
+        <div class="text">Menu</div>
+        <ul>
+          <li class="active"><a href="index.html">首頁</a></li>
+          <li>
+            <a class="feat-btn">海洋介紹
+              <span class="fas fa-caret-down first"></span>
+            </a>
+            <ul class="feat-show">
+              <li><a href="composition.html">組成</a></li>
+              <li><a href="different.html">洋與海的差異</a></li>
+            </ul>
+          </li>
+          <li><a href="oceanissue.html">海洋議題</a></li>
+          <li><a href="protect.html">海洋保育組織</a></li>
+          <li>
+            <a class="serv-btn">瀕臨絕種－海洋生物
+              <span class="fas fa-caret-down second"></span>
+            </a>
+            <ul class="serv-show">
+              <li><a href="seecow.html">佛羅里達海牛</a></li>
+              <li><a href="seal.html">夏威夷僧海豹</a></li>
+              <li><a href="bluewhale.html">藍鯨</a></li>
+            </ul>
+          </li>
+          <li><a href="activity.html">海上活動</a></li>
+          <li><a href="me.html">關於我</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="header">夏威夷僧海豹</div>
+        <p>唯一一種生活在熱帶海域的海豹</p>
+      </div>
+      <div class="photo">
+        <img src="asset/images/monkseal.png">
+      </div>
+      <div class="animal">
+        <span>夏威夷僧海豹－簡介</span>
+        <p>屬海豹科（Phocidae）新僧海豹屬（Neomonachus），是僧海豹屬下瀕危物種，曾在加勒比海、地中海大量繁殖，
+          因人類狂捕濫殺，今夏威夷僧海豹在其他地方難以發現蹤跡，僅在夏威夷群島北部生存，是一種古老且稀有的海豹。
+        <p>夏威夷僧海豹在當地語言稱ilioholokauaua，意思是在洶湧的海洋中跑步的狗，是1899年在萊桑島發現其骨頭的德國科學家發現。還有其他稱呼na mea hulu（毛茸茸）、iliokai（海狗）。</p>
+          <span>夏威夷僧海豹－特徵</span>
+          <p>夏威夷僧海豹是灰色毛皮、白色腹部，身體修長，頭部扁平較小。前肢爪發達，後肢爪退化，外側趾最長。
+            幼體毛體為全黑，脫離哺乳期後會漸漸變毛色，成體雄性均長2.14m、重172kg，成體雌性均長2.34m、重272kg，雌性的體型比雄性的稍大一些。</p>
+          <span>夏威夷僧海豹－習性、分布</span>
+          <p>除了繁殖季節，通常為獨居生活，偶爾會成群。牠們是夜間活動，花大量時間覓食再返回岸上休息。
+            其沒有旋轉後蹼的能力，後肢無法曲向前方，這導致牠們在陸地上無法快速移動，但在水中非常敏捷。</p>
+            <p>不做大範圍迴游，通常在75～90m深的珊瑚礁斜坡捕食，最深下潛500m，潛水時長5～14分鐘。<br>
+            生性好奇，對人類友好，會游到人類面前優晃，同伴間會相互追逐、打鬧，同時也會扭打撕咬，身上常會有些齒痕。
+          僅分布在太平洋中東部的夏威夷群島。</p>
+          <span>夏威夷僧海豹－現況</span>
+          <p>夏威夷僧海豹被IUCN（國際自然保護聯盟）鑑定為瀕危物種（EN）。
+            從1983年至2007年，海豹的數量降低了37%，從1999年開始，其數量已每年4.1%的速度遞減。
+            人們獵捕夏威夷僧海豹是為了肉、毛皮及油脂，到21世紀，人們在島嶼和環礁上活動，海豹們被迫離開首選棲息地。
+            雖然夏威夷僧海豹受到保護，但因為食物匱乏、海洋汙染及其他魚類捕食，依舊導致其數量不斷下降。
+            近年因為保育觀念，小海豹的數量有逐漸增加，但能不能恢復狀況依舊是個未知數。
+          </p>
+        </p>
+      </div>
+      <div>
+        <footer class="footer">HSIEH PEI YUN ©2022 COPYRIGHT</footer>
+      </div>
+
+      <script>
+      $('.btn').click(function(){
+        $(this).toggleClass("click");
+        $('.sidebar').toggleClass("show");
+      });
+        $('.feat-btn').click(function(){
+          $('nav ul .feat-show').toggleClass("show");
+          $('nav ul .first').toggleClass("rotate");
+        });
+        $('.serv-btn').click(function(){
+          $('nav ul .serv-show').toggleClass("show1");
+          $('nav ul .second').toggleClass("rotate");
+        });
+        $('nav ul li').click(function(){
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+      </script>  
+</body>
+</html>
