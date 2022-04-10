@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/intro.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>佛羅里達海牛</title>
+</head>
+<body>
+      <div class="btn">
+        <span class="fas fa-bars"> </span>
+      </div>
+      <nav class="sidebar">
+        <div class="text">Menu</div>
+        <ul>
+          <li class="active"><a href="index.html">首頁</a></li>
+          <li>
+            <a class="feat-btn">海洋介紹
+              <span class="fas fa-caret-down first"></span>
+            </a>
+            <ul class="feat-show">
+              <li><a href="composition.html">組成</a></li>
+              <li><a href="different.html">洋與海的差異</a></li>
+            </ul>
+          </li>
+          <li><a href="oceanissue.html">海洋議題</a></li>
+          <li><a href="protect.html">海洋保育組織</a></li>
+          <li>
+            <a class="serv-btn">瀕臨絕種－海洋生物
+              <span class="fas fa-caret-down second"></span>
+            </a>
+            <ul class="serv-show">
+              <li><a href="seecow.html">佛羅里達海牛</a></li>
+              <li><a href="seal.html">夏威夷僧海豹</a></li>
+              <li><a href="bluewhale.html">藍鯨</a></li>
+            </ul>
+          </li>
+          <li><a href="activity.html">海上活動</a></li>
+          <li><a href="me.html">關於我</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="header">組成</div>
+        <p>海水，佔地球水體的97%。<br>
+          擁有多種元素、化學質及豐富生態，是組成海洋的主要角色。</p>
+      </div>
+      <div class="photo">
+        <img src="asset/images/introduction.png">
+      </div>
+      <div class="composition">
+          <span>海水</span>
+          <p>據統計已從海水中發現的化學物質及元素有92種，其中以氯、鈉、鎂、硫、鈣、鉀、溴、鍶、硼、碳、氟為主要海水溶解質。</p>
+          <span>海水鹽度</span>
+          <p>海水鹽度意旨海水中溶解固體與海水的重量比，以每千克海水所含克數表示；世界海水的鹽度約為35psu（35‰），即平均一公升的海水中有35克的鹽。</p>
+          <span>海水成分恆定性</span>
+          <p>指無論海水溶解的鹽類濃度大小為何，其中常量離子間的總比是恆定的。海水恆定原因：</p>
+          <ul>
+            <li>大洋海水透過環流、潮汐、垂直流動等運動，不斷進行混合。</li>
+            <li>龐大的海水體積及各種成分的巨大總量。</li>
+            <li>長時間演變，海水蒸發和降水對海洋總體影響極其微小。</li>
+          </ul>
+            <span>營養鹽</span>
+            <div class="dipertage"><img src="asset/images/pertage.png"></div>
+            <p>海水中的生物賴以為生的鹽類，稱「營養鹽」，營養鹽主要含磷酸鹽、矽酸鹽、硝酸鹽、亞硝酸鹽，營養鹽富含在深層海水中，可藉由垂直向上的海流湧至表層。</p>
+            <p>而氮、磷、矽為海洋生物生存必需的營養素，因此在同樣的光與熱能條件下，海洋生產力取決於營養鹽的多寡。</p>    
+      </div>
+      <div>
+        <footer class="footer">HSIEH PEI YUN ©2022 COPYRIGHT</footer>
+      </div>
+
+  
+  
+      <script>
+      $('.btn').click(function(){
+        $(this).toggleClass("click");
+        $('.sidebar').toggleClass("show");
+      });
+        $('.feat-btn').click(function(){
+          $('nav ul .feat-show').toggleClass("show");
+          $('nav ul .first').toggleClass("rotate");
+        });
+        $('.serv-btn').click(function(){
+          $('nav ul .serv-show').toggleClass("show1");
+          $('nav ul .second').toggleClass("rotate");
+        });
+        $('nav ul li').click(function(){
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+      </script>  
+</body>
+</html>

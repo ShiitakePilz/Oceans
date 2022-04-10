@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/animal.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>藍鯨</title>
+</head>
+<body>
+      <div class="btn">
+        <span class="fas fa-bars"> </span>
+      </div>
+      <nav class="sidebar">
+        <div class="text">Menu</div>
+        <ul>
+          <li class="active"><a href="index.html">首頁</a></li>
+          <li>
+            <a class="feat-btn">海洋介紹
+              <span class="fas fa-caret-down first"></span>
+            </a>
+            <ul class="feat-show">
+              <li><a href="composition.html">組成</a></li>
+              <li><a href="different.html">洋與海的差異</a></li>
+            </ul>
+          </li>
+          <li><a href="oceanissue.html">海洋議題</a></li>
+          <li><a href="protect.html">海洋保育組織</a></li>
+          <li>
+            <a class="serv-btn">瀕臨絕種－海洋生物
+              <span class="fas fa-caret-down second"></span>
+            </a>
+            <ul class="serv-show">
+              <li><a href="seecow.html">佛羅里達海牛</a></li>
+              <li><a href="seal.html">夏威夷僧海豹</a></li>
+              <li><a href="bluewhale.html">藍鯨</a></li>
+            </ul>
+          </li>
+          <li><a href="activity.html">海上活動</a></li>
+          <li><a href="me.html">關於我</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="header">藍鯨</div>
+        <p>地球上現存體積最大的哺乳類動物</p>
+      </div>
+      <div class="photo">
+        <img src="asset/images/bluewhale.png">
+      </div>
+      <div class="animal">
+          <span>藍鯨－簡介</span>
+          <p>屬鬚鯨科（Balaenopteridae）鬚鯨屬（Balaenoptera），是地球上現存體型最大的動物，也是地球史上最大動物之一。<br>
+            一隻藍鯨一生雖吃下大量魚蝦，但在其死亡後，身體的軟組職足夠中小型海洋生物食用兩年，甚至可以形成小型生態圈。
+            當鯨魚不在呼吸，身體會在海洋裡慢慢降落，此為鯨落。
+          </p>
+          <span>藍鯨－特徵</span>
+          <p>體型細長成流線型，頭部呈現平坦樣，上頷背面中線有明顯稜脊，胸鰭狹長且末端尖，尾鰭後緣平整但中心點有凹刻。
+              頭部藍色，身體為藍灰色，左右上顎皆有一排寬短、黑色的鯨鬚板片。重量72～135噸之間（紀錄最重為190噸），體長在23～29公尺之間（紀錄最長為33公尺），成年雄性體長稍小於成年雌性。
+          </p>
+          <span>藍鯨－習性、分布</span>
+          <p>主要食物為磷蝦類，以衝刺、張口方式攝入大量磷蝦或無脊椎生物。平時多單隻行動或小群行動。
+              泳速介於2～6公里/時，長程迴游2～5公里/時，覓食衝刺可達33公里/時，孕期約11個月，不同族群有不同交配季節，
+              生殖間隔2～3年，平均壽命約80～90歲。</p>
+            <p>廣泛分布在各熱帶至極區海域，以海洋盆地為單位，分成北大西洋、北太平洋及南半球三大族群。</p>
+          <span>藍鯨－現況</span>
+          <p>藍鯨被IUCN（國際自然保護聯盟）鑑定為瀕危物種（EN），估計現今全球藍鯨約5000～15000隻，族群有上升趨勢。
+            潛在的危險因子包括船隻撞擊、漁業衝突、人為噪音干擾、海洋汙染、氣候變遷，人類濫捕不再是主要威脅。
+          </p>
+          <p>鯨魚的專屬日：世界鯨魚日2月21日，由太平洋鯨魚基金會在1980年發起，以電影節、路跑、嘉年華方式喚起大眾關注。</p>
+      </div>
+      <div>
+        <footer class="footer">HSIEH PEI YUN ©2022 COPYRIGHT</footer>
+      </div>
+
+      <script>
+      $('.btn').click(function(){
+        $(this).toggleClass("click");
+        $('.sidebar').toggleClass("show");
+      });
+        $('.feat-btn').click(function(){
+          $('nav ul .feat-show').toggleClass("show");
+          $('nav ul .first').toggleClass("rotate");
+        });
+        $('.serv-btn').click(function(){
+          $('nav ul .serv-show').toggleClass("show1");
+          $('nav ul .second').toggleClass("rotate");
+        });
+        $('nav ul li').click(function(){
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+      </script>  
+</body>
+</html>
