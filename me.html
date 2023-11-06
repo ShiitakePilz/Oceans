@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="asset/css/other.css" type="text/css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>關於我</title>
 </head>
 <body>
@@ -63,32 +64,30 @@
           </p>
           <span>關於我的樣子</span>
           <div class="otherme"><img src="asset/images/me.jpg"></div>
-          <p>這是我，本來想去看海結果來到八里，無蝦魚也好，有水都可以，就有了這張我在拍石頭的照片。歡迎聯絡我！</p>
-          <p><a href="https://www.instagram.com/hsieh_0605/"><img src="asset/images/iglogo.png" class="logo"></a>
-          <a href="https://line.me/ti/p/F-8cNPeP54"><img src="asset/images/linelogo.png" class="logooth"></a>
-        （不用在意他們不一樣高啦！能點開都好！：）</p>
+          <p>這是我，本來想去看海結果來到八里，無蝦魚也好，有水都可以，就有了這張我在拍石頭的照片。</p><br>
+          <p><a href="https://www.instagram.com/hsie.hpy/"><img src="asset/images/iglogo.png" class="logo"></a>這是我的Instagram，歡迎聯絡我！</p>
       </div>
       <div>
         <footer class="footer">HSIEH PEI YUN ©2022 COPYRIGHT</footer>
       </div>
       
       <script>
-      $('.btn').click(function(){
-        $(this).toggleClass("click");
-        $('.sidebar').toggleClass("show");
-      });
-        $('.feat-btn').click(function(){
-          $('nav ul .feat-show').toggleClass("show");
-          $('nav ul .first').toggleClass("rotate");
+        $('.btn').click(function(){
+          $(this).toggleClass("click");
+          $('.sidebar').toggleClass("show");
         });
-        $('.serv-btn').click(function(){
-          $('nav ul .serv-show').toggleClass("show1");
-          $('nav ul .second').toggleClass("rotate");
-        });
-        $('nav ul li').click(function(){
-          $(this).addClass("active").siblings().removeClass("active");
-        });
-      </script>  
+          $('.feat-btn').click(function(){
+            $('nav ul .feat-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+          });
+          $('.serv-btn').click(function(){
+            $('nav ul .serv-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+          });
+          $('nav ul li').click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+          });
+        </script> 
 
 </body>
 </html>
